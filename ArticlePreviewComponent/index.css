@@ -112,14 +112,65 @@ body
 
   padding: 10px;
   border-radius: 50%;
+
+  position: relative;
 }
 
 .article__share:hover
 {
-  background: hsl(217, 19%, 35%);
+  background: hsl(214, 17%, 51%);
 }
 
 .article__share:hover svg path
 {
   fill: white;
+}
+
+.share
+{
+  position: absolute;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: hsl(217, 19%, 35%);
+  border-radius: 10px;
+
+  left: -275%;
+  top: -90px;
+
+  width: 230px;
+  height: 70px;
+  padding: 15px;
+}
+
+.share::after
+{
+  content: '';
+  position: absolute;
+
+  width: 0; 
+  height: 0; 
+  bottom: -10px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  
+  border-top: 10px solid hsl(217, 19%, 35%);;
+}
+
+.share__caption
+{
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+
+  color: hsl(214, 17%, 51%);
+}
+
+.share__btn
+{
+  outline: none;
+  background: none;
+  border: none;
 }
