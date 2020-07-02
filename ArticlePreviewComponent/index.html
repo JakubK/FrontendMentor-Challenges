@@ -2,30 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="index.css"/>
-  
   <title>Frontend Mentor | Article preview component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  
-
-  
-
-  
-  <!-- Michelle Appleton
-  28 Jun 2020
-
-  Share -->
-
   <div class="article">
     <div class="article__photo">
       <img src="./images/drawers.jpg"/>
@@ -41,12 +23,16 @@
         <div class="article__footer">
           <div class="article__author">
             <img src="./images/avatar-michelle.jpg"/>
-            <div>
-              <h5>Michelle Appleton</h5>
-              <p>28 Jun 2020</p>
+            <div class="article__caption">
+              <strong>Michelle Appleton</strong><br/>
+              <span class="article__date">28 Jun 2020</span>
             </div>
           </div>
-          <button>btn</button>
+          <button class="article__share">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+              <path fill="#6E8098" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/>
+            </svg>
+          </button>
         </div>
     </div>
   </div>
