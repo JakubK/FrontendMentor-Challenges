@@ -12,4 +12,8 @@ shareBtn.addEventListener('click', function()
   shareToggled = !shareToggled;
 
   share.style.display = shareToggled ? 'flex' : 'none';
+  if(shareToggled)
+    shareBtn.classList.add('active');
+  else
+    shareBtn.classList.remove('active');
 });

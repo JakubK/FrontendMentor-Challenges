@@ -31,6 +31,12 @@ body
 {
   width: 50%;
   display: flex;
+
+  border-radius: 20px;
+
+  -webkit-box-shadow: 0px 21px 45px -13px rgba(153,182,189,1);
+  -moz-box-shadow: 0px 21px 45px -13px rgba(153,182,189,1);
+  box-shadow: 0px 21px 45px -13px rgba(153,182,189,1);
 }
 
 .article__photo
@@ -116,15 +122,16 @@ body
   position: relative;
 }
 
-.article__share:hover
+.article__share:hover, .article__share.active
 {
   background: hsl(214, 17%, 51%);
 }
 
-.article__share:hover svg path
+.article__share:hover > svg path, .article__share.active > svg path
 {
   fill: white;
 }
+
 
 .share
 {
